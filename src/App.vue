@@ -1,5 +1,8 @@
  <template> 
+  <div class="app-layout d-flex flex-column min-vh-100">
+    
   <Navbar /> 
+    <main class="flex-grow-1">
   <router-view
   :noteList="sortedNotes"
   :newNotes="newNotes"
@@ -10,7 +13,9 @@
   @update-note="updateNote"
   @toggle-pin="togglePin"
 />
+</main>
 <Footer/>
+</div>
 </template>
 
 <script setup>

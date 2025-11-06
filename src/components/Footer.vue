@@ -1,17 +1,16 @@
 <template>    
 <div id="footer">
  
-    <div class="container-fluid ">
-        <div class="row footer-section-top" id="footer">   
-                <div class="footer-section-middle-end-line"></div>
-                             </div>
-            <div class="row d-flex py-2 mb-0  footer-section-bottom">
+    <div class="container-fluid  ">
+            <div class="row    footer-section-bottom">
                 <p class="col-12 col-md-auto copyright">©Copyright ⎯ My Notes App 2025  </p>
                  
-                <p class="col-12 col-md-auto ms-auto credit">Coded with <svg id="heartbeat" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" fill-rule="evenodd" fill="var(--crimson-red)"/></svg> by  <a href="">SamiHaider</a></p>
+                <p class="col-12 col-md-auto ms-auto credit">Coded with <svg id="heartbeat" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" fill-rule="evenodd" fill="var(--crimson-red)"/></svg> by  <a href="">SamiHaider</a></p>
                 
             </div>
         </div>
+
     </div>
  
 </template>
@@ -21,8 +20,11 @@
 <style scoped>
 /*  footer */
 #footer{
-  padding: px 0 ;
-margin: 0px;   
+  padding: 0px;
+margin: 0px;
+width: 100%;
+ z-index: 1000;
+ /* margin-top: 50px; */
 }
 body, html {
     background: #140826;

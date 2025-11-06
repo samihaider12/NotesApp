@@ -46,9 +46,6 @@ const props = defineProps({
 
 // heading and message required
 
-
-
-
 // edit 
 onMounted(() => {
     if (props.editIndex !== null && props.newNotes) {
@@ -147,7 +144,7 @@ const dateString = dateTime.toString();
     margin-top: 60px;
 }
 .container{
-    min-height: 82.2vh;
+    min-height: 83.2vh;
 }
 
 textarea {
