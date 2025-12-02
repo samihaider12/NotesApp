@@ -30,11 +30,13 @@
                                {{ note.isPinned ? '📍' : '📌' }}
                             </button>
 
-                    <button class="btn btn-outline-light btn-sm box1" @click="deleteNote(index)">
-                        <img src="../assets/del1.png" alt="" id="dele" />
+                    <button class="btn btn-outline-danger rounded-circle btn-sm box1" @click="deleteNote(index)">
+                        <!-- <img src="../assets/del1.png" alt="" id="dele" /> -->
+                         <i className="bi bi-trash" id="dele"></i>
                     </button>
-                    <button class="btn btn-outline-light btn-sm box2" @click="editNote(index)">
-                        <img src="../assets/edit.png" alt="" id="edit" />
+                    <button class="btn btn-outline-primary btn-sm rounded-circle box2" @click="editNote(index)">
+                        <!-- <img src="../assets/edit.png" alt="" id="edit" /> -->
+                          <i className="bi bi-pencil" id="edit"></i>
                     </button>
                 </div>
             </div>
@@ -126,7 +128,7 @@ top: 60px;
 
 #dele {
     position: relative;
-    top: -5px;
+    top: -3px;
     right: 4px;
 }
   
