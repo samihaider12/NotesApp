@@ -72,20 +72,33 @@ function addNote() {
         resetForm() //  resetForm
         localStorage.setItem('noteTime', dateString);
     }else{
-      swal('Error','Please Titlt and Message inter then Add Note','error')
+      swal('Error','Please Enter Title and Message then Add Note','error')
     }
 } 
 
 //  updateNote  , title &  upDate Time
 function updateNote() {
-    emit('update-note', {
-        title: titleNote.value,
-        nottes: newNote.value,
-        time: dateString, 
-        isPinned: isPinned.value 
-    })
-    resetForm() //  resetForm
-    localStorage.setItem('noteTime', dateString);
+    // emit('update-note', {
+    //     title: titleNote.value,
+    //     nottes: newNote.value,
+    //     time: dateString, 
+    //     isPinned: isPinned.value 
+    // })
+    // resetForm() //  resetForm
+    // localStorage.setItem('noteTime', dateString);
+     if (titleNote.value.trim() && newNote.value.trim()) {
+        emit('update-note', {
+            title: titleNote.value,
+            nottes: newNote.value,
+            time: dateString,
+            isPinned: isPinned.value,
+             
+        }) 
+        resetForm() //  resetForm
+        localStorage.setItem('noteTime', dateString);
+    }else{
+      swal('Error','Please Enter Title and Message then Add Note','error')
+    }
 }
 
 // go to Home & resetForm

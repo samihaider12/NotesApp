@@ -122,7 +122,7 @@ top: 60px;
 
 #edit {
     position: relative;
-    top: -5px;
+    top: -4px;
     right: 3px;
 }
 
